@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  font-weight: 300;
+  font-size: 2rem;
+  color: var(--purple-500);
+}
+
+.title strong::first-letter {
+  color: var(--green-500);
+}
+
+.date {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.date strong {
+  font-weight: 700;
+  color: var(--green-500);
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 85%;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.65rem;
+    margin-top: 2rem;
+  }
+}
